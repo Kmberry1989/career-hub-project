@@ -1,4 +1,3 @@
-// LoginButton.js – Handles Google sign-in and sign-out
 import { Button } from "@/components/ui/button";
 import { signInWithGoogle, auth } from "@/lib/firebase";
 import { onAuthStateChanged, signOut } from "firebase/auth";

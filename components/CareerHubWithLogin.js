@@ -1,9 +1,12 @@
 // CareerHubWithLogin.js – Full interactive app with auth and Firestore
 import { useEffect, useState } from "react";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
+// CareerHubWithLogin.js – Full interactive app with auth and Firestore (HTML + Tailwind version)
+import { useEffect, useState } from "react";
+import { Briefcase, Search, BookOpen, UserCheck, Moon, Sun } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import LoginButton from "../components/LoginButton";
+import { fetchProfile, saveProfile } from "../lib/firebase";
+
 import { Briefcase, Search, BookOpen, UserCheck, Moon, Sun } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import LoginButton from "@/components/LoginButton";

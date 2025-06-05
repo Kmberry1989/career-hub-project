@@ -6,8 +6,3 @@ export default function Home() {
     </main>
   );
 }
-import CareerHub from "@/components/CareerHubWithLogin"; // adjust path if needed
-
-export default function Home() {
-  return <CareerHub />;
-}

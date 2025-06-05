@@ -1,5 +1,4 @@
-// CareerHubWithLogin.js – Full interactive app with auth and Firestore
-import { useEffect, useState } from "react";
+
 // CareerHubWithLogin.js – Full interactive app with auth and Firestore (HTML + Tailwind version)
 import { useEffect, useState } from "react";
 import { Briefcase, Search, BookOpen, UserCheck, Moon, Sun } from "lucide-react";

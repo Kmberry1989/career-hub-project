@@ -6,11 +6,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import LoginButton from "../components/LoginButton";
 import { fetchProfile, saveProfile } from "../lib/firebase";
 
-import { Briefcase, Search, BookOpen, UserCheck, Moon, Sun } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
-import LoginButton from "@/components/LoginButton";
-import { fetchProfile, saveProfile } from "@/lib/firebase";
-
 export default function CareerHub() {
   const [darkMode, setDarkMode] = useState(false);
   const [activeTab, setActiveTab] = useState("explore");

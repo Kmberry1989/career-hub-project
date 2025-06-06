@@ -1,5 +1,4 @@
-import { Button } from "@/components/ui/button";
-import { signInWithGoogle, auth } from "@/lib/firebase";
+import { signInWithGoogle, auth } from "../lib/firebase";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { useEffect, useState } from "react";
 
@@ -22,9 +21,19 @@ export default function LoginButton({ onUser }) {
   return user ? (
     <div className="flex items-center gap-2">
       <span className="text-sm">Hello, {user.displayName}</span>
-      <Button onClick={() => signOut(auth)} variant="outline">Logout</Button>
+      <button
+        onClick={() => signOut(auth)}
+        className="px-3 py-1 text-sm rounded bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600"
+      >
+        Logout
+      </button>
     </div>
   ) : (
-    <Button onClick={signInWithGoogle}>Login with Google</Button>
+    <button
+      onClick={signInWithGoogle}
+      className="px-3 py-1 text-sm rounded bg-teal-500 text-white hover:bg-teal-600"
+    >
+      Login with Google
+    </button>
   );
 }
